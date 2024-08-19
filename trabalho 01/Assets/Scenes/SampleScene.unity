@@ -7597,8 +7597,9 @@ GameObject:
   - component: {fileID: 244758574}
   - component: {fileID: 244758576}
   - component: {fileID: 244758575}
+  - component: {fileID: 244758577}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7661,6 +7662,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244758573}
   m_CullTransparentMesh: 1
+--- !u!95 &244758577
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244758573}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 49c943df97527364bb22c863906dacb9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &252280765 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4517218475212056665, guid: a3de2dc9fd45c9a45b5b563289b84fb6, type: 3}
@@ -10677,7 +10699,7 @@ GameObject:
   - component: {fileID: 1029234145}
   - component: {fileID: 1029234144}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10699,8 +10721,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -384, y: 264}
-  m_SizeDelta: {x: 154.616, y: 19.8653}
+  m_AnchoredPosition: {x: -348, y: 264}
+  m_SizeDelta: {x: 62.876, y: 19.865}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1029234144
 MonoBehaviour:
@@ -10723,13 +10745,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8cd7f6cdddbf1e54597bfe88606df6a5, type: 3}
     m_FontSize: 14
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -10917,6 +10939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalScore: 0
+  scoreText: {fileID: 1029234144}
 --- !u!4 &1258952418
 Transform:
   m_ObjectHideFlags: 0
@@ -11812,6 +11835,10 @@ PrefabInstance:
     - target: {fileID: 443981270519001770, guid: a3de2dc9fd45c9a45b5b563289b84fb6, type: 3}
       propertyPath: m_Name
       value: Orange
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353477049382570279, guid: a3de2dc9fd45c9a45b5b563289b84fb6, type: 3}
+      propertyPath: Score
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4517218475212056665, guid: a3de2dc9fd45c9a45b5b563289b84fb6, type: 3}
       propertyPath: m_LocalPosition.x
